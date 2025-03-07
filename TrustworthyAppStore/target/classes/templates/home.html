@@ -1,10 +1,43 @@
-<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Spring Boot Website</title>
+    <title>Trustworthy App Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .nav-button {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            /*padding: 10px 15px;*/
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
+<div class="navbar">
+    <a href="/myapp" class="navbar-title">My Spring Boot Website</a>
+    <a href="/myapp/login" class="nav-button">Login</a>
+</div>
 <h1 th:text="${message}"></h1>
-<p>This is a simple Spring Boot website using Thymeleaf.</p>
+<p>Welcome to our secure Spring Boot website!</p>
 </body>
 </html>
